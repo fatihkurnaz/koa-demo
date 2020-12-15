@@ -1,5 +1,10 @@
 import glob from 'glob';
 
+/**
+ * Read routes from files on given directory and return them as a Promise
+ * @param dirname
+ * @returns {Promise<routes>}
+ */
 export default function (dirname) {
   return new Promise((resolve, reject) => {
     const routes = [];

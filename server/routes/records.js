@@ -10,6 +10,7 @@ const router = new Router();
 
 router.prefix(`/${baseApi}/${api}`);
 
+// Post /api/records
 router.post(
   '/',
   body('minCount').isNumeric().withMessage('The minCount should be sent').build(),

@@ -6,7 +6,7 @@ class RecordsControllers {
   /* eslint-disable no-param-reassign */
 
   /**
-   * Find a record
+   * Find a record by using id
    * @param {ctx} Koa Context
    */
   async findById(ctx) {
@@ -25,7 +25,7 @@ class RecordsControllers {
   }
 
   /**
-   * Find a record
+   * Find a records that meet the criteria
    * @param {ctx} Koa Context
    */
   async findByCriteria(ctx) {
