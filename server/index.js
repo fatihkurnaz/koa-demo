@@ -10,6 +10,8 @@ import errorHandler from './middlewares/error-handler';
 
 // Create Koa Application
 const app = new Koa();
+
+// middlewares
 app.use(errorHandler);
 app.use(logger()).use(bodyParser()).use(helmet()).use(postMethodChecker);
 routing(app);

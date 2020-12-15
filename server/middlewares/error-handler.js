@@ -1,3 +1,9 @@
+/**
+ * Gathers information belongs to errors and send response to users
+ * @param ctx Koa Context
+ * @param next
+ * @returns {Promise<*>}
+ */
 export default async (ctx, next) => {
   return next().catch((err) => {
     const { statusCode, message, code } = err;
